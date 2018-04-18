@@ -10,23 +10,31 @@
 
 ### Operators
 
-#### Function: unix2timestamp
+#### Generic function: 2TIMESTAMP
+
+`defgeneric 2timestamp (value)`
+
+#### Function: 2UNIX
+
+`2unix (value &key (aws t))`
+
+#### Function: UNIX2TIMESTAMP
 
 `unix2timestamp (unix-time &key (aws t))`
 
-#### Function: timestamp2unix
+#### Function: TIMESTAMP2UNIX
 
 `timestamp2unix (timestamp &key (aws t))`
 
-#### Function: timestamp2YYYYMMDD_HHMMSS
+#### Function: TIMESTAMP2YYYYMMDD_HHMMSS
 
 `timestamp2YYYYMMDD_HHMMSS (timestamp)`
 
-#### Function: one-day-ago
+#### Function: ONE-DAY-AGO
 
 `one-day-ago ()`
 
-#### Function: two-days-ago
+#### Function: TWO-DAYS-AGO
 
 `two-days-ago ()`
 
@@ -37,11 +45,3 @@
 #### ONE-MONTH-AGO
 
 `one-month-ago (&optional (timestamp (local-time:today)))`
-
-#### Generic function: 2timestamp
-
-`defgeneric 2timestamp (value)`
-
-#### Function: 2unix
-
-`2unix (value &key (aws t))`
